@@ -1,46 +1,132 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>❤️Amazon link from Hai Phan with love❤️</title>
-
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Create link covert amazon product">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Checkout example · Bootstrap v5.0</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<style>
-.page-header {text-align:center;}
-</style>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
 
-</head>
-<body>
-    <div class="container">
-        <div class="page-header">
-            <h1>Create link Amazon.jp</h1>
-            <p class="lead">Create link Amazon.jp</p>
-        </div>
+    
 
-        <div id="group" class="form-group">
-            <label for="url" class="control-label">Input link Amazon</label>
-            <input id="url" name="url" type="url" class="form-control" placeholder="Input link amazon">
-        </div>
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <div class="form-group">
-            <label class="control-label" for="longUrl">Output your link</label>
-            <input id="longUrl" onclick="this.select();" class="form-control" type="url"/>
-        </div>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-        <div class="form-group">
-            <label class="control-label" for="shortUrl">Output your short link</label>
-            <input id="shortUrl" onclick="this.select();" class="form-control" type="url"/>
-        </div>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
 
-        <div class="form-group">
-            <a href="#" id="directLink" title="Lien direct"></a>
-        </div>
+    
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+    <src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-3" src="truck.png" alt="" width="160" height="160">
+      <h2>Create form</h2>
+      <p class="lead">Tạo link amazon miễn phí.</p>
     </div>
 
-    <script>
+    <div class="row g-3">
+      <div class="col-md-5 col-lg-4 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Refer product amazon</span>
+          <span class="badge bg-secondary rounded-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Giảm giá 50% amazon.jp</h6>
+              <small class="text-muted">Tổng hợp giảm giá 50%</small>
+            </div>
+            <span class="text-muted"><a href="https://www.amazon.co.jp/dp/B00IDYS066/ref=psdc_2285034051_t2_B073P5JLC8">Click</a></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Giảm giá 50% amazon.jp</h6>
+              <small class="text-muted">Tổng hợp giảm giá 40% </small>
+            </div>
+            <span class="text-muted"><a href="https://www.amazon.co.jp/dp/B00IDYS066/ref=psdc_2285034051_t2_B073P5JLC8">Click</a></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">Giảm giá 50% amazon.jp</h6>
+              <small class="text-muted">Tổng hợp giảm giá 30%</small>
+            </div>
+            <span class="text-muted"><a href="https://www.amazon.co.jp/dp/B00IDYS066/ref=psdc_2285034051_t2_B073P5JLC8">Click</a></span>
+          </li>
+          
+          
+        </ul>
+
+    
+      </div>
+      <div class="col-md-7 col-lg-8">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+          
+      
+
+
+            <div class="col-12">
+              <label for="address" class="form-label">Nhập link của bạn</label>
+              <input onclick="this.select();" class="form-control" type="url" id="url" name="url" placeholder="Input your link amazon product" required>
+
+              <div class="invalid-feedback">
+                
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Output link của bạn</label>
+              <input class="form-control" id="address2" type="url" placeholder="Output your link amazon product">
+            </div>
+        
+          </div>
+
+          <hr class="my-4">
+          <button id ="copy" onclick="myFunction()" class="w-100 btn btn-primary btn-lg">Copy</button>
+          <hr class="my-4">
+          <button id ="directLink" onclick="buttonClick()" class="w-100 btn btn-primary btn-lg" value="click" type="button" >Go to amazon.jp</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017–2021 My company</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      <script src="form-validation.js"></script>
+      <script>
         window.onload = function() {
 
             var url = document.getElementById('url');
@@ -58,8 +144,8 @@
                     var params = "asin=" + asin + "&tag=" + tag;
 
                     // Instant parsed url result
-                    document.getElementById('longUrl').value = longUrl;
-                    document.getElementById("group").classList.remove('has-error');
+                    document.getElementById('address2').value = longUrl;
+                    d
 
                     var request = new XMLHttpRequest();
                     request.open('POST', endpoint, true); // asynchronous POST request
@@ -74,7 +160,7 @@
                                 var data = JSON.parse(request.response).data;
                                 var shortUrl = data.url;
 
-                                document.getElementById('shortUrl').value = shortUrl;
+                                document.getElementById('address2').value = shortUrl;
 
                                 directLink.href = shortUrl;
                                 directLink.innerHTML = shortUrl;
@@ -85,14 +171,31 @@
                     request.send(params);
 
                 } else {
-                    document.getElementById("group").classList.add('has-error');
-                    document.getElementById('longUrl').value = "";
-                    document.getElementById('shortUrl').value = "";
-                    directLink.href = "";
-                    directLink.innerHTML = "";
+                  
+                   // document.getElementById('address1').value = "";
+                   // document.getElementById('address2').value = "";
+                   // directLink.href = "";
+                   // directLink.innerHTML = "";
                 }
             });
         }
     </script>
-</body>
+    <script>
+      function myFunction() {
+        var copyText = document.getElementById("address2");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+       
+      }
+      </script>
+
+<script language="javascript" type="text/javascript">
+function buttonClick(){
+var url = document.getElementById("address2").value;
+window.location = url;
+}
+</script>
+    
+  </body>
 </html>
